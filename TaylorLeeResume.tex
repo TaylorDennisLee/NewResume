@@ -1,0 +1,112 @@
+% LaTeX resume using res.cls
+\documentclass[margin]{res}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font
+\setlength{\textwidth}{5.1in} % set width of text portion
+
+% \renewcommand\familydefault{\sfdefault}
+% \usepackage[adobe-utopia]{mathdesign}
+% \usepackage[T1]{fontenc}
+% \usepackage[scaled]{times}
+
+
+\usepackage{txfonts}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+
+% Center the name over the entire width of resume:
+\moveleft.5\hoffset\centerline{\large\bf Taylor D. Lee}
+% Draw a horizontal line the whole width of resume:
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
+% address begins here
+% Again, the address lines must be centered over entire width of resume:
+\moveleft.5\hoffset\centerline{3100 Lake Mendota Dr. \#104}
+\moveleft.5\hoffset\centerline{Madison, WI 53705}
+\moveleft.5\hoffset\centerline{(608) 712-5649}
+\moveleft.5\hoffset\centerline{tdlee2@wisc.edu}
+
+
+\begin{resume}
+
+ \section{OBJECTIVE}  To acquire a position as a Frontend Engineer Apprentice with Fetch.
+
+
+ \section{EDUCATION} {\sl Bachelor of Arts,} Mathematics \\
+ {\sl Bachelor of Arts,} Studies in Applied Mathematics (Individualized Major) \\
+ % \sl will be bold italic in New Century Schoolbook (or
+ % any postscript font) and just slanted in
+ %	Computer Modern (default) font
+ Edgewood College, Madison, WI,
+ 2013
+
+ \section{HONORS} {\sl Dean's List} Edgewood College \\
+ {\sl Mid-Career Physicist Award} Edgewood College
+
+
+ \section{COMPUTER \\ SKILLS} {\sl Languages \& Software:} Python, MATLAB, R,
+ LaTeX, Java, C, Sage, Javascript, HTML, CSS, Angular, BASH, HTCondor. \\
+ {\sl Operating Systems:} Unix, Mac OSX, Windows.
+ {\sl Databases:} MySQL, CouchDB, MongoDB
+
+\section{UW-Madison CS COURSES} {\sl CS 240,} {\sl CS 252,} {\sl CS 302,} {\sl CS 352,} {\sl CS 354,} {\sl CS 367,}  {\sl CS 412,} {\sl CS 435}
+
+
+ \section{EXPERIENCE} {\sl Underwriting Intern} \hfill Summer 2012 \\
+ Group Health Coopertive of South Central Wisconsin,
+ Madison, WI
+ \begin{itemize}  \itemsep -2pt %reduce space between items
+  \item Calculated Increase in premiums for large groups based on in house formulas.
+ \end{itemize}
+
+ {\sl Actuarial Assistant Internship} \hfill            Late Summer 2012 \\
+ Huttleston and Associates, Madison, WI
+ \begin{itemize}  \itemsep -2pt %reduce space between items
+  \item Developed HTML parsers with Python which collected premium data for individual health plans from Dane County's four largest HMOs, includign all ages, genders, and smoking preferences.
+ \end{itemize}
+
+ {\sl Student Hourly Programmer} \hfill August 2014 - August 2015\\
+ University of Wisconsin-Madison, Dept. of Bacteriology
+ \begin{itemize}  \itemsep -2pt
+  \item Worked as a Programmer for the Bacteriology Lab of Federico Rey. The Lab's research focused on the human gut microbiome. Gained valuble experience in Bioinformatics. Learned to use HTCondor and SLURM with HTC and HPC respectively. Participated in an RNA-Seq discussion group that met at WID and a Metagenomics seminar group that met at MSB.
+  \item Sharpened experience with Python and Shell scripting. Installed and used a vast array of Bioinformatics software, including Prokka, a prokaryate Annotation pipeline, and installed QIIME (Quantitative Insights Into Microbial Ecology), a 16S software pipeline with a broad range of dependencies.
+  \item Managed a collection of 93 bacteria genomes, and developed an RNA-seq pipeline that read in SAM files and GFF files, and output an excel table with the number of hits each gene from each bug in each sample received.
+ \end{itemize}
+
+ {\sl Student Hourly Programmer} \hfill August 2015 - March 2016 \\
+ University of Wisconsin-Madison, Dept. of Mechanical Engineering, Advanced Composite Materials Group
+ \begin{itemize}  \itemsep -2pt
+  \item Currently working as a programmer for a Mechanical Engineering group, developing a web application that will allow information from testing 3D printed-objects to be saved to a MongoDB database. Working with a Python Web Framework called Tornado and an HTML template language called Jinja2.
+  \item Database will allow advanced data aggregation and provide crucial information for future designs. Currently working to make the application richer with AngularJS.
+  \item Also used Javascript library THREE.js to help grad student in group visualize the results of algorithms that fill in surfaces with lines that represent the toolpath of the 3D printer.
+ \end{itemize}
+
+ {\sl Angular 2+ Developer} \hfill May 2017 - Sept 2017\\
+HealthConnect.Link
+ \begin{itemize}  \itemsep -2pt
+  \item Worked as a Angular 2+ Developer for a non-Profit startup called HealthConnect.Link. Used Angular 2 and NGRX to build a advanced search menu that would allow users to specify with precision what non-for profit services they are interested in.
+ \end{itemize}
+
+ {\sl React Developer} \hfill Feb 2018 - May 2018\\
+DataChat
+ \begin{itemize}  \itemsep -2pt
+  \item Worked as a React Developer for a startup called DataChat.
+ \end{itemize}
+
+ {\sl Associate Research Specialist} \hfill Jan 2019 - Nov 2019\\
+Laboratory of David O'Connor, University of Wisconsin-Madison Department of Pathology
+ \begin{itemize}  \itemsep -2pt
+  \item Worked as a Associate Research Specialist in the Laboratory of David O'Connor. Performed a number of Bioinformatics related tasks, including running an Allele assembly pipeline on servers at UW-Madison's Center for High Throughput Computing with HTCondor, as well as the development of an Allele annotation pipeline. I oversaw the submission of over 500 alleles to IPD, the Immuno Polymorphism Database, which is hosted by the European Molecular Biology Laboratory.
+ \end{itemize}
+
+ \section{PROJECTS} {\sl Computational Number Theory: Cohen-Lenstra Heuristics for Cubic Number Fields} \hfill Spring 2013 \\
+ University of Wisconsin-Madison
+ \begin{itemize}  \itemsep -2pt %reduce space between items
+  \item Used the Mathematical Computing Software Sage to compute the
+        Fractional Ideal Class Groups of Non-Cyclic Cubic Number Fields within the University of Wisconsin-Madison Mathematics Department's Collabrative Undergraduate Research Laboratory. Our computation extends far beyond other online databases by a factor of 1000, in terms of discriminant bound. This project involved remotely connecting to a Math Department server and managing a large file system while constantly writing Python and Shell Scripts.
+ \end{itemize}
+
+
+
+\end{resume}
+\end{document}
